@@ -1,0 +1,57 @@
+.sg-container {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content:safe center;
+    align-items:sage center;
+    overflow: auto;
+    padding: 4em;
+}
+
+.sg-settings {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.sg-grid {
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    tr {
+        border: 2px solid black;
+        height: 4rem;
+    }
+    td {
+        border: 2px solid black;
+        width: 4rem;
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
+
+.sg-clicked {
+    animation-name: colorAnim;
+    animation-duration: 0.2s;
+    background-color: lightgreen;
+}
+
+.sg-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@keyframes colorAnim {
+    from {
+        background-color: rgba(lightgreen, 0);
+    }
+    to {
+        background-color: rgba(lightgreen, 1);
+    }
+}
