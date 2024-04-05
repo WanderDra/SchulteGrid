@@ -72,6 +72,9 @@ export class AppComponent {
   }
 
   onStartClick(): void {
+    if (!this.checkValidation()) {
+      return;
+    }
     this.timerInterval = setInterval(() => {
       ++this.timer;
     }, 10);
